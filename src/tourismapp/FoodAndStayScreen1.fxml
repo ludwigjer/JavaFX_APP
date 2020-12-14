@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #5EA09B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScreenControllers.FoodAndStayScreen1Controller">
+   <children>
+      <Pane layoutY="50.0" prefHeight="6.0" prefWidth="400.0" style="-fx-background-color: #3E5C5C;" />
+      <Pane layoutY="542.0" prefHeight="58.0" prefWidth="400.0" style="-fx-background-color: #456666;">
+         <children>
+            <JFXButton layoutY="-1.0" onAction="#goToMenu" prefHeight="58.0" prefWidth="200.0" style="-fx-min-width: 200;" text="Menu" textAlignment="CENTER" textFill="#ffffffd0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutX="197.0" prefHeight="58.0" prefWidth="6.0" style="-fx-background-color: #395454;" />
+            <JFXButton layoutX="200.0" onAction="#logOut" prefHeight="58.0" prefWidth="200.0" style="-fx-min-width: 200;" text="Logout" textAlignment="CENTER" textFill="#ffffffd0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label layoutX="23.0" layoutY="101.0" prefHeight="31.0" prefWidth="356.0" text="Book my dinner in the restaurant" textFill="#ffffffd5">
+         <font>
+            <Font name="Book Antiqua" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="182.0" prefHeight="21.0" prefWidth="127.0" text="Number of people" textFill="#f6edede3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="223.0" prefHeight="21.0" prefWidth="127.0" text="Time" textFill="#f6edede3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="numberOfPeople" focusColor="#823421" labelFloat="true" layoutX="204.0" layoutY="175.0" prefHeight="25.0" prefWidth="144.0" promptText="No more than 65 people" unFocusColor="#e9e9e9">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="time" focusColor="#823421" labelFloat="true" layoutX="204.0" layoutY="219.0" promptText="e.g. xx:xx (16:00-22:00)" unFocusColor="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font></JFXTextField>
+      <Button layoutX="156.0" layoutY="377.0" mnemonicParsing="false" onAction="#bookRestaurant" prefHeight="40.0" prefWidth="89.0" style="-fx-background-color: #375252;" text="Submit" textFill="#ffffffb2">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="97.0" layoutY="444.0" mnemonicParsing="false" onAction="#goToStay" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: #375252;" text="I want to book my stay" textFill="#ffffffb2">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="textMessage" fill="#ebebeb" layoutX="54.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="292.13671875">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="errorMessage" fill="#823421" layoutX="107.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter all sections" wrappingWidth="187.70564804240814">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="43.0" layoutY="10.0" prefHeight="40.0" prefWidth="314.0" text="Welcome to Powerscourt Estate" textFill="#ffffffb6">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </Label>
+      <Text fx:id="errorMessageInputCheck" fill="#823421" layoutX="94.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wrong input please check!" wrappingWidth="214.37239608928314">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

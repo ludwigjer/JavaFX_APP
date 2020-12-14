@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #5EA09B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScreenControllers.OverViewScreen3_1Controller">
+   <children>
+      <Pane layoutY="542.0" prefHeight="58.0" prefWidth="400.0" style="-fx-background-color: #456666;">
+         <children>
+            <JFXButton layoutY="-1.0" onAction="#back" prefHeight="58.0" prefWidth="200.0" style="-fx-min-width: 200;" text="Back" textAlignment="CENTER" textFill="#ffffffd0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutX="197.0" prefHeight="58.0" prefWidth="6.0" style="-fx-background-color: #395454;" />
+            <JFXButton layoutX="200.0" onAction="#logOut" prefHeight="58.0" prefWidth="200.0" style="-fx-min-width: 200;" text="Logout" textAlignment="CENTER" textFill="#ffffffd0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutY="50.0" prefHeight="6.0" prefWidth="400.0" style="-fx-background-color: #3E5C5C;" />
+      <Label layoutX="43.0" layoutY="10.0" prefHeight="40.0" prefWidth="314.0" text="Welcome to Powerscourt Estate" textFill="#ffffffb6">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </Label>
+      <Pane fx:id="video1" layoutY="56.0" prefHeight="241.0" prefWidth="400.0" />
+      <JFXButton fx:id="buttonPause" layoutX="130.0" layoutY="254.0" onAction="#pauseV" prefHeight="25.0" prefWidth="27.0">
+         <graphic>
+            <FontAwesomeIconView fill="SILVER" glyphName="PAUSE" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="buttonLast" layoutX="92.0" layoutY="254.0" onAction="#lastV" prefHeight="29.0" prefWidth="17.0">
+         <graphic>
+            <FontAwesomeIconView fill="#c0c0c0" glyphName="FAST_FORWARD" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="buttonstart" layoutX="25.0" layoutY="254.0" onAction="#startV" prefHeight="29.0" prefWidth="17.0">
+         <graphic>
+            <FontAwesomeIconView fill="#c0c0c0" glyphName="FAST_BACKWARD" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="buttonStop" layoutX="164.0" layoutY="254.0" onAction="#stopV" prefHeight="25.0" prefWidth="27.0">
+         <graphic>
+            <FontAwesomeIconView fill="SILVER" glyphName="STOP" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="buttonFast" layoutX="289.0" layoutY="255.0" onAction="#fastV" prefHeight="25.0" prefWidth="27.0">
+         <graphic>
+            <FontAwesomeIconView fill="SILVER" glyphName="PLUS" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="buttonsSlow" layoutX="318.0" layoutY="255.0" onAction="#slowV" prefHeight="25.0" prefWidth="27.0">
+         <graphic>
+            <FontAwesomeIconView fill="SILVER" glyphName="MINUS" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="buttonReload" layoutX="348.0" layoutY="255.0" onAction="#reloadV" prefHeight="25.0" prefWidth="27.0">
+         <graphic>
+            <FontAwesomeIconView fill="SILVER" glyphName="REPEAT" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="buttonPlay" layoutX="62.0" layoutY="254.0" onAction="#playV" prefHeight="29.0" prefWidth="17.0">
+         <graphic>
+            <FontAwesomeIconView fill="#c0c0c0" glyphName="PLAY" size="20" />
+         </graphic>
+      </JFXButton>
+      <Label layoutX="72.0" layoutY="295.0" prefHeight="29.0" prefWidth="257.0" text="Personality Goes A Long Way" textFill="#ffffff9e">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Label>
+      <Text fill="#ffffff98" layoutX="30.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dubliners will admit theirs isn't the prettiest city, but will remind you that pretty things are as easy to like as they are to forget…before showing you the showstopper Georgian bits to prove that Dublin has a fine line in sophisticated elegance. True love is demonstrated with brutal unsentimentality round here, but they'll go soft at the knees when talking about the character and personality of the 'greatest city in the world, if you ignore all the others'. Garrulous, amiable and witty, Dubliners at their ease are the greatest hosts of all, a charismatic bunch with compelling soul and sociability." wrappingWidth="344.13671875">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="104.0" layoutY="480.0" mnemonicParsing="false" onAction="#goTo1stVideoPage" prefHeight="35.0" prefWidth="192.0" style="-fx-background-color: #375252;" text="Layers of History" textFill="#ffffffb2">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

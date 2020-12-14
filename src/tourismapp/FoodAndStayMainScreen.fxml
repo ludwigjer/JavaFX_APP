@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #5EA09B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScreenControllers.FoodAndStayMainScreenController">
+   <children>
+      <Pane layoutY="50.0" prefHeight="6.0" prefWidth="400.0" style="-fx-background-color: #3E5C5C;" />
+      <Pane layoutY="542.0" prefHeight="58.0" prefWidth="400.0" style="-fx-background-color: #456666;">
+         <children>
+            <JFXButton layoutY="-1.0" onAction="#goToMenu" prefHeight="58.0" prefWidth="200.0" style="-fx-min-width: 200;" text="Menu" textAlignment="CENTER" textFill="#ffffffd0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutX="197.0" prefHeight="58.0" prefWidth="6.0" style="-fx-background-color: #395454;" />
+            <JFXButton layoutX="200.0" onAction="#logOut" prefHeight="58.0" prefWidth="200.0" style="-fx-min-width: 200;" text="Logout" textAlignment="CENTER" textFill="#ffffffd0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutY="296.0" prefHeight="6.0" prefWidth="400.0" style="-fx-background-color: #3E5C5C;" />
+      <ImageView fitHeight="246.0" fitWidth="400.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/images/_DSC0945.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="47.0" layoutY="130.0" mnemonicParsing="false" onAction="#goToFood" prefHeight="69.0" prefWidth="307.0" style="-fx-opacity: 0.7; -fx-background-color: #D9D2BD; -fx-background-radius: 6;" text="Book my dinner">
+         <font>
+            <Font name="Book Antiqua" size="35.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="240.0" fitWidth="400.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/images/_DSC4420And8more_tonemapped.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="47.0" layoutY="388.0" mnemonicParsing="false" onAction="#goToStay" prefHeight="69.0" prefWidth="307.0" style="-fx-opacity: 0.7; -fx-background-color: #D9D2BD; -fx-background-radius: 6;" text="Book my stay">
+         <font>
+            <Font name="Book Antiqua" size="35.0" />
+         </font>
+      </Button>
+      <Label layoutX="43.0" layoutY="10.0" prefHeight="40.0" prefWidth="314.0" text="Welcome to Powerscourt Estate" textFill="#ffffffb6">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

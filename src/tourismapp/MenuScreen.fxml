@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #5EA09B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScreenControllers.MenuScreenController">
+   <children>
+      <Pane layoutY="50.0" prefHeight="6.0" prefWidth="400.0" style="-fx-background-color: #3E5C5C;" />
+      <Pane layoutX="9.0" layoutY="67.0" prefHeight="150.0" prefWidth="186.0" style="-fx-background-color: #456666; -fx-background-radius: 6;">
+         <children>
+            <JFXButton onAction="#goToDiscover" style="-fx-min-height: 150; -fx-min-width: 186; -fx-background-radius: 6;" text="Overview" textFill="#ffffffc4">
+               <font>
+                  <Font name="Book Antiqua" size="22.0" />
+               </font>
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </JFXButton>
+            <FontAwesomeIconView fill="#ffffffd6" glyphName="TRIPADVISOR" layoutX="67.0" layoutY="80.0" opacity="0.87" size="40" />
+         </children>
+      </Pane>
+      <Pane layoutX="204.0" layoutY="67.0" prefHeight="150.0" prefWidth="186.0" style="-fx-background-color: #456666; -fx-background-radius: 6;">
+         <children>
+            <JFXButton onAction="#goToBookingTour" style="-fx-min-height: 150; -fx-min-width: 186; -fx-background-radius: 6;" text="Book Tour" textFill="#ffffffc4">
+               <font>
+                  <Font name="Book Antiqua" size="22.0" />
+               </font>
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </JFXButton>
+            <FontAwesomeIconView fill="#ffffffd6" glyphName="CALENDAR_CHECK_ALT" layoutX="73.0" layoutY="79.0" opacity="0.87" size="40" />
+         </children>
+      </Pane>
+      <Pane layoutY="542.0" prefHeight="58.0" prefWidth="400.0" style="-fx-background-color: #456666;">
+         <children>
+            <JFXButton layoutY="-1.0" onAction="#goToQuiz" prefHeight="58.0" prefWidth="200.0" style="-fx-min-width: 200;" text="Quiz" textAlignment="CENTER" textFill="#ffffffd0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutX="197.0" prefHeight="58.0" prefWidth="6.0" style="-fx-background-color: #395454;" />
+            <JFXButton layoutX="200.0" onAction="#logOut" prefHeight="58.0" prefWidth="200.0" style="-fx-min-width: 200;" text="Logout" textAlignment="CENTER" textFill="#ffffffd0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="9.0" layoutY="225.0" prefHeight="150.0" prefWidth="186.0" style="-fx-background-color: #456666; -fx-background-radius: 6;">
+         <children>
+            <JFXButton onAction="#goToFoodAndStayMain" style="-fx-min-height: 150; -fx-min-width: 186; -fx-background-radius: 6;" text="Food &amp; Stay" textFill="#ffffffc4">
+               <font>
+                  <Font name="Book Antiqua" size="22.0" />
+               </font>
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </JFXButton>
+            <FontAwesomeIconView fill="#ffffffd6" glyphName="CUTLERY" layoutX="50.0" layoutY="78.0" opacity="0.87" size="40" />
+            <FontAwesomeIconView fill="#ffffffd6" glyphName="HOTEL" layoutX="102.0" layoutY="82.0" opacity="0.87" size="40" />
+         </children>
+      </Pane>
+      <Pane layoutX="9.0" layoutY="383.0" prefHeight="150.0" prefWidth="186.0" style="-fx-background-color: #456666; -fx-background-radius: 6;">
+         <children>
+            <JFXButton onAction="#goToAbout" style="-fx-min-height: 150; -fx-min-width: 186; -fx-background-radius: 6;" text="About" textFill="#ffffffc4">
+               <font>
+                  <Font name="Book Antiqua" size="22.0" />
+               </font>
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </JFXButton>
+            <FontAwesomeIconView fill="#ffffffd6" glyphName="FORT_AWESOME" layoutX="73.0" layoutY="75.0" opacity="0.87" size="40" />
+         </children>
+      </Pane>
+      <Pane layoutX="204.0" layoutY="225.0" prefHeight="150.0" prefWidth="186.0" style="-fx-background-color: #456666; -fx-background-radius: 6;">
+         <children>
+            <JFXButton onAction="#goToTransport" style="-fx-min-height: 150; -fx-min-width: 186; -fx-background-radius: 6;" text="Transport" textFill="#ffffffc4">
+               <font>
+                  <Font name="Book Antiqua" size="22.0" />
+               </font>
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </JFXButton>
+            <FontAwesomeIconView fill="#ffffffd6" glyphName="TRAIN" layoutX="76.0" layoutY="80.0" opacity="0.87" size="40" />
+         </children>
+      </Pane>
+      <Pane layoutX="204.0" layoutY="383.0" prefHeight="150.0" prefWidth="186.0" style="-fx-background-color: #456666; -fx-background-radius: 6;">
+         <children>
+            <JFXButton onAction="#goToQRCode" style="-fx-min-height: 150; -fx-min-width: 186; -fx-background-radius: 6;" text="Free Ticket" textFill="#ffffffc4">
+               <font>
+                  <Font name="Book Antiqua" size="22.0" />
+               </font>
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </JFXButton>
+            <FontAwesomeIconView fill="#ffffffd6" glyphName="MONEY" layoutX="72.0" layoutY="79.0" opacity="0.87" size="40" />
+         </children>
+      </Pane>
+      <Label layoutX="43.0" layoutY="10.0" prefHeight="40.0" prefWidth="314.0" text="Welcome to Powerscourt Estate" textFill="#ffffffb6">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #5EA09B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScreenControllers.OverViewScreen1_1Controller">
+   <children>
+      <Pane layoutY="542.0" prefHeight="58.0" prefWidth="400.0" style="-fx-background-color: #456666;">
+         <children>
+            <JFXButton layoutY="-1.0" onAction="#back" prefHeight="58.0" prefWidth="200.0" style="-fx-min-width: 200;" text="Back" textAlignment="CENTER" textFill="#ffffffd0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutX="197.0" prefHeight="58.0" prefWidth="6.0" style="-fx-background-color: #395454;" />
+            <JFXButton layoutX="200.0" onAction="#logOut" prefHeight="58.0" prefWidth="200.0" style="-fx-min-width: 200;" text="Logout" textAlignment="CENTER" textFill="#ffffffd0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ImageView fitHeight="120.0" fitWidth="400.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Media/images/_DSC4406And8more_tonemapped-2.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="50.0" prefHeight="6.0" prefWidth="400.0" style="-fx-background-color: #3E5C5C;" />
+      <Label layoutX="62.0" layoutY="96.0" prefHeight="40.0" prefWidth="278.0" text="Discover Powerscourt Hotel" textFill="#ffffffed">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="238.0" prefHeight="225.0" prefWidth="371.0" text="Powerscourt Hotel Resort &amp; Spa is a totally immersive hotel exper&#10;-ience. We offer 5 star luxury with genuine warmth, in breathtaking&#10;surroundings, delivered by people as individual as you are.&#10;&#10;Committed...&#10;We’re intuitive, aware and always switched on. We’re natural and &#10;open, relaxed, yet attentive and above all discreet and professional.&#10; Our brand is firmly embedded in our local environment and we&#10;work hard to build relationships with everyone around us. We &#10;believe in nurturing a culture of respect from the inside out, to &#10;ensure that every customer experience is delivered genuinely and &#10;sincerely. It’s not about stiff formality, it’s about a warm, personal &#10;service that delivers so much more." textFill="#fffffff0">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="68.0" layoutY="470.0" mnemonicParsing="false" onAction="#goDiscoverGarden" prefHeight="40.0" prefWidth="266.0" style="-fx-background-color: #375252;" text="Discover Powerscourt Garden" textFill="#ffffffb2">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </Button>
+      <JFXButton fx:id="buttonPlay" layoutX="125.0" layoutY="194.0" onAction="#playM" prefHeight="29.0" prefWidth="17.0">
+         <graphic>
+            <FontAwesomeIconView fill="#c0c0c0" glyphName="PLAY" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="buttonPause" layoutX="178.0" layoutY="194.0" onAction="#pauseM" prefHeight="25.0" prefWidth="27.0">
+         <graphic>
+            <FontAwesomeIconView fill="#d4d4d4" glyphName="PAUSE" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="buttonStop" layoutX="232.0" layoutY="194.0" onAction="#stopM" prefHeight="25.0" prefWidth="27.0">
+         <graphic>
+            <FontAwesomeIconView fill="#c7c7c7" glyphName="STOP" size="20" />
+         </graphic>
+      </JFXButton>
+      <Label layoutX="43.0" layoutY="10.0" prefHeight="40.0" prefWidth="314.0" text="Welcome to Powerscourt Estate" textFill="#ffffffb6">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

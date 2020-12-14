@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #5EA09B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScreenControllers.TransportScreenController">
+   <children>
+      <Pane layoutY="50.0" prefHeight="6.0" prefWidth="400.0" style="-fx-background-color: #3E5C5C;" />
+      <Pane layoutY="542.0" prefHeight="58.0" prefWidth="400.0" style="-fx-background-color: #456666;">
+         <children>
+            <JFXButton layoutY="-1.0" onAction="#goToMenu" prefHeight="58.0" prefWidth="200.0" style="-fx-min-width: 200;" text="Menu" textAlignment="CENTER" textFill="#ffffffd0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutX="197.0" prefHeight="58.0" prefWidth="6.0" style="-fx-background-color: #395454;" />
+            <JFXButton layoutX="200.0" onAction="#logOut" prefHeight="58.0" prefWidth="200.0" style="-fx-min-width: 200;" text="Logout" textAlignment="CENTER" textFill="#ffffffd0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label layoutX="35.0" layoutY="74.0" prefHeight="31.0" prefWidth="341.0" text="How to get Powerscourt Estate" textFill="#ffffffd5">
+         <font>
+            <Font name="Book Antiqua" size="24.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="315.0" layoutY="204.0" onAction="#goByBus" prefHeight="6.0" prefWidth="79.0" text="more info" textFill="#2074ba">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <Pane layoutY="232.0" prefHeight="6.0" prefWidth="400.0" style="-fx-background-color: #3E5C5C;" />
+      <Pane layoutY="366.0" prefHeight="6.0" prefWidth="400.0" style="-fx-background-color: #3E5C5C;" />
+      <Hyperlink layoutX="316.0" layoutY="336.0" onAction="#goByBus" prefHeight="6.0" prefWidth="79.0" text="more info" textFill="#2074ba">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="315.0" layoutY="509.0" onAction="#goByCar" prefHeight="6.0" prefWidth="79.0" text="more info" textFill="#2074ba">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="9.0" layoutY="143.0" prefHeight="64.0" prefWidth="393.0" text="The closest public transportation to the estate are the 185 and 44 bus &#10;services which leave visitors in Enniskerry village in County Wicklow, a &#10;short walk from the Estate (approximately 25 minutes, wear comforta&#10;-ble shoes)" textFill="#ffffffd5">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="275.0" prefHeight="74.0" prefWidth="393.0" text="The nearest DART station (rail) to the Estate is Bray, County Wicklow&#10;which connects the 185 bus with Dublin City Centre. The rail line &#10;runs along the coast of Dublin, from Malahide and Howth southw&#10;-ards as far as Greystones, County Wicklow." textFill="#ffffffd5">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="402.0" prefHeight="117.0" prefWidth="393.0" text="Take the N11 southbound (Wexford). At approximately 19km , take exit&#10; 7 for Bray south, Enniskerry, Powerscourt Gardens. Turn left at rounda&#10;-bout, over flyover and rejoin N11 heading north. Take first left for Enn&#10;-iskerry Village (Exit 6a). Continue along road to Enniskerry Village. Take &#10;the road to the left of the clock tower, in the village square, continue up &#10;steep hill for 600m. Powerscourt entrance is on the right-hand side opp&#10;-osite church entrance." textFill="#ffffffd5">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="107.0" prefHeight="40.0" prefWidth="128.0" text="Travelling by bus" textFill="#feffcdd6">
+         <font>
+            <Font name="Book Antiqua Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="238.0" prefHeight="40.0" prefWidth="128.0" text="Travelling by train" textFill="#feffcdd6">
+         <font>
+            <Font name="Book Antiqua Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="368.0" prefHeight="40.0" prefWidth="119.0" text="Travelling by car" textFill="#feffcdd6">
+         <font>
+            <Font name="Book Antiqua Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="10.0" prefHeight="40.0" prefWidth="314.0" text="Welcome to Powerscourt Estate" textFill="#ffffffb6">
+         <font>
+            <Font name="Book Antiqua" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

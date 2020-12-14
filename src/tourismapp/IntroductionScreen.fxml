@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #5EA09B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScreenControllers.IntroductionScreenController"> 
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="400.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Media/images/gif3.gif" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="60.0" layoutY="45.0" prefHeight="403.0" prefWidth="281.0" style="-fx-background-color: #375252; -fx-background-radius: 6; -fx-opacity: 0.7;">
+         <children>
+            <Label layoutX="6.0" layoutY="72.0" prefHeight="307.0" prefWidth="269.0" text="Powerscourt Estate (Irish: Eastát Chúirt an&#10;Phaoraigh), located in Enniskerry, County &#10;Wicklow, Ireland, is a large country estate which&#10; is noted for its house and landscaped gardens, &#10;today occupying 19 hectares (47 acres). The &#10;house, originally a 13th-century castle, was &#10;extensively altered during the 18th century by &#10;German architect Richard Cassels, starting in &#10;1731 and finishing in 1741.[1] A fire in 1974 left &#10;the house lying as a shell until it was renovated &#10;in 1996.&#10;&#10;Originally the family seat of the Viscounts Powerscourt, &#10;the estate has been owned by the Slazenger family, &#10;founders and former owners of the Slazenger sporting &#10;goods business, since 1961. It is a popular tourist &#10;attraction, and includes Powerscourt Golf Club, an &#10;Avoca Handweavers restaurant, and an Autograph &#10;Collection Hotel.&#10;&#10;" textAlignment="CENTER" textFill="#cecccce3" />
+            <Label layoutX="47.0" layoutY="22.0" text="Powerscourt App" textFill="#ffffffd5">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="button" alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="486.0" mnemonicParsing="false" onAction="#toLoginScreen" style="-fx-background-radius: 6; -fx-background-color: #3E5C5C; -fx-opacity: 0.7;" text="Strat" textAlignment="CENTER" textFill="#feffffc4">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
